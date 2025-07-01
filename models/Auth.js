@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
+// create auth schema;
 const authSchema = new mongoose.Schema({
   name: {
     type: String,
