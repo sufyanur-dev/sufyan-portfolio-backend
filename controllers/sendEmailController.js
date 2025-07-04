@@ -16,7 +16,13 @@ export const sendEmailController = async (req, res) => {
             Message: ${msg}`,
       });
 
-      sendSuccess(res, 200, "Email sended successfully!", req.body, null);
+      sendSuccess(
+        res,
+        200,
+        "Email has been sent successfully!",
+        req.body,
+        null
+      );
     }
   } catch (error) {
     sendError(res, 500, "Internal Server Error!");
