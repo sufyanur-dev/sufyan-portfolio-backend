@@ -15,6 +15,7 @@ dotenv.config();
 app.use(
   cors({
     origin: "https://sufyanurrasheed.onrender.com",
+    // origin: "http://localhost:5173",
     methods: ["GET", "POST"],
   })
 );
@@ -34,6 +35,7 @@ server.listen(PORT, () => {
 const io = new Server(server, {
   cors: {
     origin: "https://sufyanurrasheed.onrender.com",
+    // origin: "http://localhost:5173",
     methods: ["GET", "POST"],
   },
 });
