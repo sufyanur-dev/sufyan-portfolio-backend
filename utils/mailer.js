@@ -17,6 +17,7 @@ export const sendEmail = async ({ to, subject, text, html }) => {
   const receiver = {
     from: process.env.EMAIL_USER,
     to,
+    cc: process.env.EMAIL_USER,
     subject,
     text,
     html,
